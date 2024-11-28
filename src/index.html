@@ -7,15 +7,17 @@
     <title>Clonegram</title>
   </head>
   <body>
-    <div class="h-screen w-screen grid grid-cols-2 grid-rows-6">
+    <div
+      class="h-screen w-screen grid grid-cols-1 md:grid-cols-2 grid-rows-6 md:"
+    >
       <!-- Imagem principal -->
-      <aside class="row-span-5 flex justify-end">
+      <aside class="row-span-5 hidden md:flex justify-end">
         <img class="w-max-96" src="../src/img/insta-img.png" />
       </aside>
 
       <!-- formulário -->
       <main
-        class="row-span-5 flex flex-col justify-center items-start grid-cols-1"
+        class="row-span-5 flex flex-col justify-center items-center md:items-start grid-cols-1"
       >
         <form
           action=""
