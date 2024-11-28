@@ -7,44 +7,87 @@
     <title>Clonegram</title>
   </head>
   <body>
-    <!-- Imagem principal -->
-    <div>
-      <img src="../src/img/insta-img.png" alt="" />
-    </div>
+    <div class="h-screen w-screen grid grid-cols-2 grid-rows-6">
+      <!-- Imagem principal -->
+      <aside class="row-span-5 flex justify-end">
+        <img class="w-max-96" src="../src/img/insta-img.png" />
+      </aside>
 
-    <!-- formulário -->
-    <div>
-      <form action="">
-        <img src="../src/img/insta-logo.png" alt="" />
+      <!-- formulário -->
+      <main
+        class="row-span-5 flex flex-col justify-center items-start grid-cols-1"
+      >
+        <form
+          action=""
+          class="w-80 flex flex-col justify-center items-center border rounded-sm px-10 py-4 gap-2"
+        >
+          <img class="w-52" src="../src/img/insta-logo.png" alt="" />
 
-        <div>
-          <div>
-            <input type="text" placeholder="Número de telefone, Email" />
-          </div>
-          <div>
-            <input type="text" placeholder="Senha" />
-          </div>
-          <div>
-            <button>Entrar</button>
-          </div>
-          <div>
-            <a href="">Entrar com facebook</a>
-            <a href="">Esqueci minha senha</a>
-          </div>
+          <input
+            class="bg-slate-100 h-9 w-full pl-3 border rounded-sm"
+            type="text"
+            placeholder="Número de telefone, Email"
+          />
+
+          <input
+            class="bg-slate-100 h-9 w-full pl-3 border rounded-sm"
+            type="text"
+            placeholder="Senha"
+          />
+
+          <button
+            class="bg-sky-500 text-slate-100 font-bold w-full rounded-md h-8 hover:bg-sky-300"
+          >
+            Entrar
+          </button>
+
+          <a href="#" class="flex gap-1 text-blue-900 font-bold cursor-pointer">
+            <img class="w-6" src="./img/facebook-logo.png" alt="" />
+            <span> Entrar com facebook</span>
+          </a>
+          <a href="#" class="text-blue-900 text-sm cursor-pointer"
+            >Esqueci minha senha</a
+          >
+        </form>
+
+        <div class="border rounded-sm mt-5 px-10 py-4 w-80 text-center">
+          <p>
+            Não tem conta?
+            <a href="#" class="text-sky-500 font-bold">Cadastrar-se</a>
+          </p>
         </div>
-      </form>
 
-      <div>
-        <p>Não tem conta? <a href="">Cadastrar-se</a></p>
-      </div>
+        <div class="w-80 flex justify-center items-center px-10 py-2">
+          <p class="text-center">Obtenha o aplicativo!</p>
+        </div>
 
-      <p>Baixe o aplicativo!</p>
-    </div>
+        <div class="w-80 flex gap-2 justify-center items-center px-10 py-1">
+          <img class="h-10" src="../src/img/apple.png" alt="" />
+          <img class="h-10" src="../src/img/google.png" alt="" />
+        </div>
+      </main>
 
-    <!-- rodapé -->
-    <div>
-      <img src="../src/img/apple.png" alt="" />
-      <img src="../src/img/google.png" alt="" />
+      <!-- rodapé -->
+      <footer class="row-span-1 col-span-2">
+        <ul class="flex flex-wrap gap-5 justify-center">
+          <li class="text-slate-700 text-sm">Meta</li>
+          <li class="text-slate-700 text-sm">Sobre</li>
+          <li class="text-slate-700 text-sm">Blog</li>
+          <li class="text-slate-700 text-sm">Carreiras</li>
+          <li class="text-slate-700 text-sm">Ajuda</li>
+          <li class="text-slate-700 text-sm">API</li>
+          <li class="text-slate-700 text-sm">Privacidade</li>
+          <li class="text-slate-700 text-sm">Termos</li>
+          <li class="text-slate-700 text-sm">Localizações</li>
+          <li class="text-slate-700 text-sm">Instagram Lite</li>
+          <li class="text-slate-700 text-sm">Threads</li>
+          <li class="text-slate-700 text-sm">Meta Verified</li>
+        </ul>
+        <ul class="flex flex-wrap gap-5 justify-center my-4">
+          <li class="text-slate-700 text-sm">Português Brasil</li>
+          <li class="text-slate-700 text-sm">© 2024 Instagram from Meta</li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>
